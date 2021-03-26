@@ -1,21 +1,29 @@
-Sub Color_Palette()
-    'dimensions
-    Columns("A:H").ColumnWidth = 10
-    Rows("1:7").RowHeight = 55
-    'number location
-    Range("A:H").VerticalAlignment = xlCenter
-    Range("A:H").HorizontalAlignment = xlCenter
+Sub color_palette():
+    'Generates a 7x8 color palette in a new sheet
     
-    Dim n As Long                                            'clock seed
-    n = InputBox("Color Clock Seed:")                        '7000 has all fonts except 56 as their interior color
+    'Sheet Creation
+    Sheets.Add
+    ActiveSheet.Name = "Color_Palette"
+    'Cell Formating
+    With Columns("A:H")
+        .ColumnWidth = 10
+        .RowHeight = 55
+        .VerticalAlignment = xlCenter
+        .HorizontalAlignment = xlCenter
+    End With
+    'Cell Fill and Font.color
     For i = 1 To 7
         For j = 1 To 8
-            A = j + B                                        'Carry over from previous row
-            Cells(i, j).Value = A
-            Cells(i, j).Font.ColorIndex = (A + n) Mod 56
-            Cells(i, j).Interior.ColorIndex = A
+             A = j + B
+            With Cells(i, j)
+                .Value = A
+                .Font.ColorIndex = (A + 3) Mod 56
+                .Interior.ColorIndex = A
+            End With
         Next j
-    B = A                                                    'Final value at end of row
+    B = A
     Next i
 
 End Sub
+
+
