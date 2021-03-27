@@ -1,7 +1,8 @@
 # Simple-Color-Palette
 VBA script which generates a (7 x 8) color palette in Excel. 
 
-![Capture](https://user-images.githubusercontent.com/12026338/112585320-f601ec80-8dcf-11eb-8cb0-e31c4f4c437e.PNG)
+![image](https://user-images.githubusercontent.com/12026338/112726039-a74c7380-8ef1-11eb-871a-6a38edc1869d.png)
+
 
 Was reading about how to make some changes to Font in VBA and decided to try my hand at an example exercise: https://www.excel-easy.com/vba/examples/background-colors.html.
 
