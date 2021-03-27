@@ -17,7 +17,7 @@ Sub color_palette():
              A = j + B
             With Cells(i, j)
                 .Value = A
-                .Font.ColorIndex = (A + 3) Mod 56
+                .Font.ColorIndex = (A + 3) Mod 56  'you can set .Font.ColorIndex to a static number, i just chose this method to make it readable for the case of .value = .font
                 .Interior.ColorIndex = A
             End With
         Next j
