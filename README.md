@@ -8,7 +8,7 @@ the VBA code which generates a 7x8 Color Palette.
 
 <h5>Some initial thoughts for later:</h5>
 
-<h6>Complementary System: <h6>
+<h6>Complementary System: </h6>
 
 ( n / 2 ) mod n is the complementary system
 
