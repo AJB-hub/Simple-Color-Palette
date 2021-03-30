@@ -1,11 +1,15 @@
-# Simple-Color-Palette
-VBA script which generates a (7 x 8) color palette in Excel. 
+After watching [this video](https://www.youtube.com/watch?v=_2LLXnUdUIc) on graphic design,
+I noticed the color wheel could be broken into a modular system. Currently looking into how this
+could apply for web design. My aha moment was when the color wheel is shown, I instantly remembered 
+the VBA code which generates a 7x8 Color Palette. 
 
-![image](https://user-images.githubusercontent.com/12026338/112726039-a74c7380-8ef1-11eb-871a-6a38edc1869d.png)
+
+<h1>Some initial thoughts for later:                                                                    </h1>
+
+( n / 2 ) mod n is the complementary system
 
 
-Was reading about how to make some changes to Font in VBA and decided to try my hand at an example exercise: https://www.excel-easy.com/vba/examples/background-colors.html.
-
-Useful to have on hand if you want a quick reference for color options when creating macros in VB for excel.
-
-Looking to find a cleaner way to choose a font color which doesn't rely on conditionals / uses a map which guarentees the font color is legible for a cell.
+Split-Complements
+Initial thought was for ( n / 2 ) +- c mod n however I feel this is clearly begging for n to approach infinity
+so the limit as n approaches infinity would be equivalent to the complementary system, meaning any distintion 
+between the two after a certain point is neglegable. Thus I suspect ( n / 2 ) +- n mod n to be an interesting choice. 
