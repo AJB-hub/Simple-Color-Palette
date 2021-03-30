@@ -25,6 +25,6 @@
         between the two after a certain point is neglegable. Thus I suspect ( n / 2 ) +- n mod n to be an interesting choice.
     </p> 
 
-    https://upload.wikimedia.org/wikipedia/commons/3/3b/Chevreul%27s_RYB_chromatic_diagram.png
+
 </body>
 </html>     
