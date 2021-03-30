@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>The Clock Strikes Twelve</title>
+
 </head>
 <body>
 
