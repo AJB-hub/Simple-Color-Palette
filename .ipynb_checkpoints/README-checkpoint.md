@@ -5,7 +5,11 @@
 
 </head>
 <body>
-
+    <h3>V.1.0 Python Added</h3>
+    <p>
+        Implemented the color wheel in matplotlib python library. Still looking to add more color definiton to the wheel. 
+    </p>
+    <img src='./ColorWheel.svg'>
 <h3>A Youtube Thought...</h3>
     <p>
         After watching <a href=https://www.youtube.com/watch?v=_2LLXnUdUIc >this video</a> on graphic design,
