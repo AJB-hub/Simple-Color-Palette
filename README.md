@@ -5,6 +5,9 @@
 
 </head>
 <body>
+    <h3>V.1.0.1 A better wheel</h3>
+    <p>
+        Essentially what I wanted to create with thie 
     <h3>V.1.0 Python Added</h3>
     <p>
         Implemented the color wheel in matplotlib python library. Still looking to add more color definiton to the wheel. 

@@ -9,31 +9,50 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-# In[76]:
+# In[100]:
 
 
 slices = []
 pie_colors = []
-
-for subdiv in np.arange(0,1,0.05):
-    color = (1-subdiv,subdiv,0)
+n=.5
+for subdiv in np.arange(0,1,n):
+    color = (1,subdiv,0)
     pie_colors.append(color)
     slices.append(1)
-for subdiv in np.arange(0,1,0.05):
-    color = (0,1-subdiv,subdiv)
+for subdiv in np.arange(0,1,n):
+    color = (1-subdiv,1,0)
     pie_colors.append(color)
     slices.append(1)
-for subdiv in np.arange(0,1,0.05):
-    color = (subdiv,0,1-subdiv)
+for subdiv in np.arange(0,1,n):
+    color = (0,1,subdiv)
+    pie_colors.append(color)
+    slices.append(1)
+for subdiv in np.arange(0,1,n):
+    color = (0,1-subdiv,1)
+    pie_colors.append(color)
+    slices.append(1)
+for subdiv in np.arange(0,1,n):
+    color = (subdiv,0,1)
+    pie_colors.append(color)
+    slices.append(1)
+for subdiv in np.arange(0,1,n):
+    color = (1,0,1-subdiv)
     pie_colors.append(color)
     slices.append(1)
 
 
-# In[77]:
+# In[109]:
 
 
 
-plt.pie(slices,colors=pie_colors)
+plt.pie(slices,colors=pie_colors,radius=1.5)
+plt.pie([1],colors="w",radius=1)
 plt.savefig('./ColorWheel.svg')
 plt.show()
+
+
+# In[ ]:
+
+
+
 
